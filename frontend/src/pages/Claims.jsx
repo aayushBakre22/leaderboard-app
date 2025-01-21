@@ -71,7 +71,7 @@ const Claims = () => {
               <p>
                 <span className="username">@{claim.user.username}</span> claimed{" "}
                 {claim.pointsClaimed}{" "}
-                {claim.pointsClaimed === 1 ? "point!" : "points!"}!
+                {claim.pointsClaimed === 1 ? "point" : "points"}!
               </p>
               <span className="date">
                 {new Date(claim.createdAt).toLocaleString("en-in")}
