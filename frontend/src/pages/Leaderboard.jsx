@@ -1,6 +1,6 @@
 import axios from "../axios-instance.js";
 import { useEffect, useState } from "react";
-import "./Leaderboard.css";
+import "./styles/Leaderboard.css";
 import { io } from "socket.io-client";
 
 const Leaderboard = () => {
@@ -25,12 +25,12 @@ const Leaderboard = () => {
   }, []);
 
   useEffect(() => {
-    document.title = 'Leaderboard';
-    const socket = io("https://leaderboard-app-oqvs.onrender.com"); 
+    document.title = "Leaderboard";
+    const socket = io("https://leaderboard-app-oqvs.onrender.com");
 
     socket.on("pointsUpdated", (updatedUser) => {
       //console.log("Points updated: ", updatedUser);
-      updateUserPoints(updatedUser); 
+      updateUserPoints(updatedUser);
     });
 
     return () => {

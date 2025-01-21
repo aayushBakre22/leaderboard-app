@@ -1,6 +1,6 @@
 import axios from "../axios-instance.js";
 import AddUser from "../components/AddUser.jsx";
-import "./Users.css";
+import "./styles/Users.css";
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
@@ -72,7 +72,7 @@ const Users = () => {
   }, [searchQuery]);
 
   useEffect(() => {
-    document.title = 'Users';
+    document.title = "Users";
     const socket = io("https://leaderboard-app-oqvs.onrender.com");
     socket.on("pointsUpdated", (updatedUser) => {
       //console.log("Points updated: ", updatedUser);

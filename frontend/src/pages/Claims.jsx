@@ -1,6 +1,6 @@
 import axios from "../axios-instance.js";
 import { useState, useEffect } from "react";
-import "./Claims.css";
+import "./styles/Claims.css";
 import { io } from "socket.io-client";
 
 const Claims = () => {
