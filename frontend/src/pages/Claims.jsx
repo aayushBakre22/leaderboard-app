@@ -17,7 +17,6 @@ const Claims = () => {
       //console.log(page);
       const response = await axios.get("/getClaims", {
         params: { page, limit: 10 },
-        // headers: { "Content-Type": "application/json" },
       });
       const data = response.data.data;
       //console.log(data);
@@ -71,7 +70,8 @@ const Claims = () => {
             <li key={index} className="claim-item">
               <p>
                 <span className="username">@{claim.user.username}</span> claimed{" "}
-                {claim.pointsClaimed} points!
+                {claim.pointsClaimed}{" "}
+                {claim.pointsClaimed === 1 ? "point!" : "points!"}!
               </p>
               <span className="date">
                 {new Date(claim.createdAt).toLocaleString("en-in")}
