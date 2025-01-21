@@ -17,7 +17,7 @@ const Claims = () => {
       //console.log(page);
       const response = await axios.get("/getClaims", {
         params: { page, limit: 10 },
-        headers: { "Content-Type": "application/json" },
+        // headers: { "Content-Type": "application/json" },
       });
       const data = response.data.data;
       //console.log(data);
