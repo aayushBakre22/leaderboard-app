@@ -47,7 +47,7 @@ const Claims = () => {
 
   useEffect(() => {
     document.title = "Claims History";
-    const socket = io("http://localhost:3000");
+    const socket = io("https://leaderboard-app-oqvs.onrender.com");
     socket.on("claimAdded", (newClaim) => {
       //console.log("Claim added: ", newClaim);
       setClaims((prev) => {

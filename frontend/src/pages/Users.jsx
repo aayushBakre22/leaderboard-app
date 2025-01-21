@@ -73,7 +73,7 @@ const Users = () => {
 
   useEffect(() => {
     document.title = 'Users';
-    const socket = io("http://localhost:3000");
+    const socket = io("https://leaderboard-app-oqvs.onrender.com");
     socket.on("pointsUpdated", (updatedUser) => {
       //console.log("Points updated: ", updatedUser);
       updateUserPoints(updatedUser);

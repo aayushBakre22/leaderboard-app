@@ -26,7 +26,7 @@ const Leaderboard = () => {
 
   useEffect(() => {
     document.title = 'Leaderboard';
-    const socket = io("http://localhost:3000"); 
+    const socket = io("https://leaderboard-app-oqvs.onrender.com"); 
 
     socket.on("pointsUpdated", (updatedUser) => {
       //console.log("Points updated: ", updatedUser);
