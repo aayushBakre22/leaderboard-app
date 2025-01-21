@@ -1,0 +1,50 @@
+.claims-container {
+    height: 100%;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .claims-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .claim-item {
+    padding: 50px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .claim-item span.username {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .claim-item span.date {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 14px;
+    color: #007bff;
+  }
+  
+  .no-more {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+  }

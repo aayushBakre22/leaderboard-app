@@ -1,0 +1,133 @@
+.users {
+  width: 100%;
+  margin: auto;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+/* Basic styles for the User List component */
+.user-list {
+  padding: 10px 20px;
+}
+
+/* Search bar styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  /* width: 100%; */
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.add-user-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-user-button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for user items */
+.user-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.user-item:hover {
+  background-color: #e1e1e1;
+}
+
+/* Highlight selected user */
+.user-item.selected {
+  background-color: #00bcd4;
+  color: white;
+}
+
+/* Styling for user avatar */
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.user-avatar img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular avatar */
+}
+
+/* Styling for user information */
+.user-info {
+  display: flex;
+  gap: 5px;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.user-username {
+  font-size: 1rem;
+  color: #555;
+}
+
+.user-points {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Styling for the CLAIM button */
+.claim-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.claim-button:hover {
+  background-color: #0097a7;
+}
+
+.claim-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

@@ -1,0 +1,71 @@
+.leaderboard {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leaderboard-container {
+  background-color: #333;
+  border-radius: 12px;
+  width: 60vw;
+  padding: 10px 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #f9f9f9;
+  margin: 10px 20px 0;
+  border-radius: 12px;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.leaderboard-item:hover {
+  background-color: #00bcd4;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rank {
+  width: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.avatar {
+  height: 100%;
+  display: flex;
+
+  img {
+    flex-grow: 1;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.points {
+  margin-left: auto;
+  margin-right: 10px;
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
