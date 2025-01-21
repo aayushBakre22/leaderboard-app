@@ -1,4 +1,4 @@
-/* Basic styles for the background and form */
+
 .background {
   position: fixed;
   top: 0;
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Prevent scrolling */
+  overflow: hidden;
 }
 
 .form-container {
